@@ -1,4 +1,4 @@
-import MeetupCard from "@/components/MeetupCard"
+import MeetupCard from "@/Components/MeetupCard"
 import { MongoClient } from "mongodb"
 
 export default function Home({ meetups }) {
