@@ -14,7 +14,7 @@ export default function Home({ meetups }) {
 export async function getStaticProps() {
   // fetch data from an API
   const client = await MongoClient.connect(
-    "mongodb://localhost:27017/Assignment"
+    "mongodb+srv://redpositive:Ppju5XkgQad4O1Af@cluster0.d0hszsm.mongodb.net/next-meetups?retryWrites=true&w=majority"
   )
   const db = client.db()
 

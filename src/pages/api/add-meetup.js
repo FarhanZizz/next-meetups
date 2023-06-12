@@ -5,7 +5,7 @@ async function handler(req, res) {
     const data = req.body
 
     const client = await MongoClient.connect(
-      "mongodb://localhost:27017/Assignment"
+      "mongodb+srv://redpositive:Ppju5XkgQad4O1Af@cluster0.d0hszsm.mongodb.net/next-meetups?retryWrites=true&w=majority"
     )
     const db = client.db()
 

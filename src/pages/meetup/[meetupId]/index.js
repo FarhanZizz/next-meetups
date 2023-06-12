@@ -25,7 +25,7 @@ const index = ({ meetupData }) => {
 
 export async function getStaticPaths() {
   const client = await MongoClient.connect(
-    "mongodb://localhost:27017/Assignment"
+    "mongodb+srv://redpositive:Ppju5XkgQad4O1Af@cluster0.d0hszsm.mongodb.net/next-meetups?retryWrites=true&w=majority"
   )
   const db = client.db()
 
@@ -49,7 +49,7 @@ export async function getStaticProps(context) {
   const meetupId = context.params.meetupId
 
   const client = await MongoClient.connect(
-    "mongodb://localhost:27017/Assignment"
+    "mongodb+srv://redpositive:Ppju5XkgQad4O1Af@cluster0.d0hszsm.mongodb.net/next-meetups?retryWrites=true&w=majority"
   )
   const db = client.db()
 
