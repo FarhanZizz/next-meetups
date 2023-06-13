@@ -7,10 +7,10 @@ const index = ({ meetupData }) => {
   const meetupId = router.query.meetupId
   return (
     <div className="card w-3/4 mx-auto mt-10 lg:card-side rounded-none">
-      <figure>
+      <figure className="flex-1">
         <img className="w-96 " src={meetupData.image} alt="Album" />
       </figure>
-      <div className="card-body">
+      <div className="card-body flex-1">
         <h2 className="card-title">{meetupData.name}</h2>
         <p>{meetupData.description}</p>
         <div className="card-actions justify-end">
